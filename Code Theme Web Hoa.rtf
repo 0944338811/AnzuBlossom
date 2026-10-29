@@ -1,0 +1,594 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2759
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh18000\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+<!DOCTYPE html>\
+<html lang="vi">\
+<head>\
+  <meta charset="UTF-8">\
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+  <meta name="theme-color" content="#F5F6ED">\
+  <meta name="description" content="Anzu Blossom - Hoa t\uc0\u432 \u417 i tinh t\u7871  cho nh\u7919 ng kho\u7843 nh kh\u7855 c y\'eau th\u432 \u417 ng.">\
+  <title>Anzu Blossom | Hoa t\uc0\u432 \u417 i trao y\'eau th\u432 \u417 ng</title>\
+\
+  <link rel="preconnect" href="https://fonts.googleapis.com">\
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">\
+\
+  <style>\
+    :root \{\
+      --ivory: #F5F6ED;\
+      --sage-light: #DCE3D3;\
+      --text: #394333;\
+      --sage: #68765D;\
+      --line: #D9DECF;\
+      --white: #FFFFFF;\
+    \}\
+\
+    * \{ box-sizing: border-box; \}\
+\
+    html \{ scroll-behavior: smooth; \}\
+\
+    body \{\
+      margin: 0;\
+      background: var(--ivory);\
+      color: var(--text);\
+      font-family: "Be Vietnam Pro", sans-serif;\
+      line-height: 1.6;\
+    \}\
+\
+    a \{ color: inherit; text-decoration: none; \}\
+    button \{ font: inherit; cursor: pointer; \}\
+\
+    .announcement \{\
+      padding: 8px 16px;\
+      background: var(--text);\
+      color: white;\
+      text-align: center;\
+      font-size: 12px;\
+      letter-spacing: .3px;\
+    \}\
+\
+    .header \{\
+      position: sticky;\
+      top: 0;\
+      z-index: 10;\
+      display: flex;\
+      align-items: center;\
+      justify-content: space-between;\
+      gap: 24px;\
+      padding: 18px 5%;\
+      background: rgba(245,246,237,.96);\
+      border-bottom: 1px solid var(--line);\
+      backdrop-filter: blur(12px);\
+    \}\
+\
+    .logo \{\
+      font-family: "Playfair Display", serif;\
+      font-size: 28px;\
+      font-weight: 600;\
+      letter-spacing: -.7px;\
+      white-space: nowrap;\
+    \}\
+\
+    .logo span \{ color: var(--sage); \}\
+\
+    .nav \{\
+      display: flex;\
+      align-items: center;\
+      gap: 26px;\
+      font-size: 13px;\
+    \}\
+\
+    .nav a:hover \{ color: var(--sage); \}\
+\
+    .header-actions \{\
+      display: flex;\
+      align-items: center;\
+      gap: 12px;\
+    \}\
+\
+    .icon-button \{\
+      padding: 9px 13px;\
+      border: 1px solid var(--line);\
+      border-radius: 24px;\
+      background: transparent;\
+      color: var(--text);\
+      font-size: 12px;\
+    \}\
+\
+    .hero \{\
+      display: grid;\
+      grid-template-columns: 1fr 1fr;\
+      align-items: center;\
+      gap: 48px;\
+      padding: 54px 7%;\
+      background: var(--sage-light);\
+    \}\
+\
+    .eyebrow \{\
+      margin: 0 0 12px;\
+      color: var(--sage);\
+      font-size: 11px;\
+      font-weight: 700;\
+      letter-spacing: 2px;\
+      text-transform: uppercase;\
+    \}\
+\
+    h1, h2, h3, p \{ margin-top: 0; \}\
+\
+    .hero h1 \{\
+      max-width: 550px;\
+      margin-bottom: 18px;\
+      font-family: "Playfair Display", serif;\
+      font-size: clamp(38px, 4.4vw, 62px);\
+      font-weight: 500;\
+      line-height: 1.12;\
+    \}\
+\
+    .hero-copy \{\
+      max-width: 440px;\
+      margin-bottom: 26px;\
+      color: #58614F;\
+      font-size: 14px;\
+      line-height: 1.9;\
+    \}\
+\
+    .primary-button \{\
+      display: inline-block;\
+      padding: 13px 22px;\
+      border: 0;\
+      border-radius: 3px;\
+      background: var(--sage);\
+      color: white;\
+      font-size: 13px;\
+      transition: background .2s;\
+    \}\
+\
+    .primary-button:hover \{ background: var(--text); \}\
+\
+    .hero-image \{\
+      display: block;\
+      width: 100%;\
+      height: 410px;\
+      border-radius: 3px;\
+      object-fit: cover;\
+      background: #E8E8DD;\
+    \}\
+\
+    .section \{\
+      padding: 56px 5%;\
+    \}\
+\
+    .section-heading \{\
+      display: flex;\
+      align-items: end;\
+      justify-content: space-between;\
+      gap: 20px;\
+      margin-bottom: 26px;\
+    \}\
+\
+    .section-heading h2 \{\
+      margin-bottom: 5px;\
+      font-family: "Playfair Display", serif;\
+      font-size: clamp(28px, 3vw, 38px);\
+      font-weight: 500;\
+    \}\
+\
+    .section-heading p \{\
+      margin-bottom: 0;\
+      color: #727868;\
+      font-size: 13px;\
+    \}\
+\
+    .view-all \{\
+      flex-shrink: 0;\
+      padding-bottom: 5px;\
+      border-bottom: 1px solid var(--sage);\
+      font-size: 12px;\
+    \}\
+\
+    .product-grid \{\
+      display: grid;\
+      grid-template-columns: repeat(5, minmax(0, 1fr));\
+      gap: 28px 18px;\
+    \}\
+\
+    .product-card \{ min-width: 0; \}\
+\
+    .product-image-wrap \{\
+      position: relative;\
+      overflow: hidden;\
+      aspect-ratio: 4 / 5;\
+      margin-bottom: 12px;\
+      background: #EAECE2;\
+    \}\
+\
+    .product-image \{\
+      width: 100%;\
+      height: 100%;\
+      display: block;\
+      object-fit: cover;\
+      transition: transform .35s ease;\
+    \}\
+\
+    .product-card:hover .product-image \{ transform: scale(1.04); \}\
+\
+    .product-tag \{\
+      position: absolute;\
+      top: 10px;\
+      left: 10px;\
+      padding: 5px 8px;\
+      background: var(--ivory);\
+      color: var(--text);\
+      font-size: 9px;\
+    \}\
+\
+    .product-name \{\
+      margin: 0 0 5px;\
+      font-size: 13px;\
+      font-weight: 500;\
+      line-height: 1.5;\
+    \}\
+\
+    .product-price \{\
+      margin: 0;\
+      color: var(--sage);\
+      font-size: 14px;\
+      font-weight: 700;\
+    \}\
+\
+    .product-actions \{\
+      display: flex;\
+      gap: 7px;\
+      margin-top: 10px;\
+    \}\
+\
+    .add-button \{\
+      flex: 1;\
+      min-width: 0;\
+      padding: 9px 6px;\
+      border: 1px solid var(--sage);\
+      background: transparent;\
+      color: var(--text);\
+      font-size: 11px;\
+    \}\
+\
+    .add-button:hover \{\
+      background: var(--sage);\
+      color: white;\
+    \}\
+\
+    .story \{\
+      display: grid;\
+      grid-template-columns: .9fr 1.1fr;\
+      gap: 45px;\
+      align-items: center;\
+      padding: 54px 7%;\
+      background: #E9EDE3;\
+    \}\
+\
+    .story h2 \{\
+      margin-bottom: 15px;\
+      font-family: "Playfair Display", serif;\
+      font-size: 36px;\
+      font-weight: 500;\
+      line-height: 1.2;\
+    \}\
+\
+    .story p \{\
+      color: #626B5A;\
+      font-size: 13px;\
+      line-height: 1.9;\
+    \}\
+\
+    .story-image \{\
+      width: 100%;\
+      height: 300px;\
+      object-fit: cover;\
+      background: #DCE3D3;\
+    \}\
+\
+    .footer \{\
+      padding: 38px 5%;\
+      background: var(--text);\
+      color: #F5F6ED;\
+    \}\
+\
+    .footer-inner \{\
+      display: flex;\
+      align-items: start;\
+      justify-content: space-between;\
+      gap: 25px;\
+    \}\
+\
+    .footer .logo \{ margin-bottom: 10px; \}\
+\
+    .footer p, .footer a \{\
+      color: #D9DECF;\
+      font-size: 12px;\
+    \}\
+\
+    .footer-links \{\
+      display: flex;\
+      flex-wrap: wrap;\
+      gap: 18px;\
+    \}\
+\
+    .zalo-float \{\
+      position: fixed;\
+      right: 18px;\
+      bottom: 18px;\
+      z-index: 20;\
+      padding: 13px 18px;\
+      border-radius: 30px;\
+      background: var(--sage);\
+      color: white;\
+      box-shadow: 0 5px 20px #39433325;\
+      font-size: 13px;\
+      font-weight: 600;\
+    \}\
+\
+    .cart-count \{ font-weight: 700; \}\
+\
+    @media (max-width: 1000px) \{\
+      .header \{ padding: 16px 4%; \}\
+      .nav \{ gap: 14px; \}\
+      .product-grid \{ grid-template-columns: repeat(3, minmax(0, 1fr)); \}\
+      .hero \{ padding: 42px 5%; gap: 28px; \}\
+      .hero-image \{ height: 340px; \}\
+    \}\
+\
+    @media (max-width: 650px) \{\
+      .announcement \{ font-size: 10px; \}\
+\
+      .header \{\
+        padding: 13px 4%;\
+        flex-wrap: wrap;\
+        gap: 12px;\
+      \}\
+\
+      .logo \{ font-size: 24px; \}\
+      .nav \{\
+        order: 3;\
+        width: 100%;\
+        justify-content: space-between;\
+        gap: 8px;\
+        font-size: 11px;\
+      \}\
+\
+      .header-actions \{ gap: 6px; \}\
+      .icon-button \{ padding: 7px 10px; font-size: 11px; \}\
+\
+      .hero \{\
+        grid-template-columns: 1fr;\
+        gap: 22px;\
+        padding: 34px 5% 28px;\
+      \}\
+\
+      .hero h1 \{ font-size: 41px; \}\
+      .hero-copy \{ font-size: 13px; \}\
+      .hero-image \{ height: 290px; \}\
+\
+      .section \{ padding: 38px 4%; \}\
+\
+      .section-heading \{\
+        align-items: start;\
+        margin-bottom: 20px;\
+      \}\
+\
+      .section-heading h2 \{ font-size: 29px; \}\
+      .section-heading p \{ font-size: 11px; \}\
+      .view-all \{ font-size: 11px; \}\
+\
+      .product-grid \{\
+        grid-template-columns: repeat(2, minmax(0, 1fr));\
+        gap: 23px 12px;\
+      \}\
+\
+      .product-image-wrap \{ margin-bottom: 9px; \}\
+      .product-name \{ font-size: 12px; \}\
+      .product-price \{ font-size: 13px; \}\
+      .product-actions \{ margin-top: 8px; \}\
+      .add-button \{ font-size: 10px; padding: 9px 3px; \}\
+\
+      .story \{\
+        grid-template-columns: 1fr;\
+        gap: 20px;\
+        padding: 36px 5%;\
+      \}\
+\
+      .story h2 \{ font-size: 30px; \}\
+      .story-image \{ height: 240px; \}\
+\
+      .footer-inner \{ flex-direction: column; \}\
+      .zalo-float \{ right: 12px; bottom: 12px; \}\
+    \}\
+  </style>\
+</head>\
+\
+<body>\
+  <div class="announcement">\
+    ANZU BLOSSOM \'b7 HOA T\uc0\u431 \u416 I CHO NH\u7918 NG KHO\u7842 NH KH\u7854 C \u272 \u7862 C BI\u7878 T\
+  </div>\
+\
+  <header class="header">\
+    <a class="logo" href="#" aria-label="Anzu Blossom trang ch\uc0\u7911 ">\
+      Anzu <span>Blossom</span>\
+    </a>\
+\
+    <nav class="nav" aria-label="\uc0\u272 i\u7873 u h\u432 \u7899 ng ch\'ednh">\
+      <a href="#home">Trang ch\uc0\u7911 </a>\
+      <a href="#products">Hoa t\uc0\u432 \u417 i</a>\
+      <a href="#story">V\uc0\u7873  ch\'fang t\'f4i</a>\
+      <a href="#contact">Li\'ean h\uc0\u7879 </a>\
+    </nav>\
+\
+    <div class="header-actions">\
+      <a class="icon-button" href="#products">Xem hoa</a>\
+      <button class="icon-button" type="button" id="cartButton">\
+        Gi\uc0\u7887  h\'e0ng (<span class="cart-count" id="cartCount">0</span>)\
+      </button>\
+    </div>\
+  </header>\
+\
+  <main>\
+    <section class="hero" id="home">\
+      <div>\
+        <p class="eyebrow">Flowers with love</p>\
+        <h1>G\uc0\u7917 i hoa,<br>trao y\'eau th\u432 \u417 ng.</h1>\
+        <p class="hero-copy">\
+          Nh\uc0\u7919 ng thi\u7871 t k\u7871  hoa t\u432 \u417 i tinh t\u7871  d\'e0nh cho sinh nh\u7853 t, ng\'e0y k\u7927  ni\u7879 m\
+          v\'e0 nh\uc0\u7919 ng kho\u7843 nh kh\u7855 c b\u7841 n mu\u7889 n l\u432 u gi\u7919  th\u7853 t l\'e2u.\
+        </p>\
+        <a class="primary-button" href="#products">Kh\'e1m ph\'e1 b\uc0\u7897  s\u432 u t\u7853 p</a>\
+      </div>\
+\
+      <img\
+        class="hero-image"\
+        src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=1200&q=85"\
+        alt="B\'f3 hoa t\uc0\u432 \u417 i thanh l\u7883 ch"\
+      >\
+    </section>\
+\
+    <section class="section" id="products">\
+      <div class="section-heading">\
+        <div>\
+          <p class="eyebrow">Our collection</p>\
+          <h2>Hoa \uc0\u273 \u432 \u7907 c y\'eau th\'edch</h2>\
+          <p>Ch\uc0\u7885 n m\u7897 t b\'f3 hoa thay l\u7901 i mu\u7889 n n\'f3i.</p>\
+        </div>\
+        <a class="view-all" href="#products">Kh\'e1m ph\'e1 t\uc0\u7845 t c\u7843  \u8599 </a>\
+      </div>\
+\
+      <div class="product-grid" id="productGrid"></div>\
+    </section>\
+\
+    <section class="story" id="story">\
+      <div>\
+        <p class="eyebrow">The art of flowers</p>\
+        <h2>M\uc0\u7895 i b\'f4ng hoa,<br>m\u7897 t l\u7901 i y\'eau th\u432 \u417 ng.</h2>\
+        <p>\
+          Anzu Blossom tin r\uc0\u7857 ng hoa kh\'f4ng ch\u7881  \u273 \u7865 p m\'e0 c\'f2n gi\'fap ch\'fang ta\
+          g\uc0\u7917 i g\u7855 m nh\u7919 ng \u273 i\u7873 u \u273 \'f4i khi kh\'f3 n\'f3i th\'e0nh l\u7901 i. H\'e3y ch\u7885 n m\u7897 t\
+          thi\uc0\u7871 t k\u7871  ph\'f9 h\u7907 p v\u7899 i kho\u7843 nh kh\u7855 c c\u7911 a b\u7841 n.\
+        </p>\
+        <a class="primary-button" href="#products">T\'ecm b\'f3 hoa c\uc0\u7911 a b\u7841 n</a>\
+      </div>\
+\
+      <img\
+        class="story-image"\
+        src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?auto=format&fit=crop&w=1000&q=85"\
+        alt="Nh\uc0\u7919 ng b\'f4ng hoa \u273 \u432 \u7907 c s\u7855 p x\u7871 p tinh t\u7871 "\
+        loading="lazy"\
+      >\
+    </section>\
+  </main>\
+\
+  <footer class="footer" id="contact">\
+    <div class="footer-inner">\
+      <div>\
+        <div class="logo">Anzu <span>Blossom</span></div>\
+        <p>Hoa t\uc0\u432 \u417 i cho nh\u7919 ng kho\u7843 nh kh\u7855 c \u273 \u7863 c bi\u7879 t.</p>\
+        <p>Th\'f4ng tin li\'ean h\uc0\u7879  v\'e0 \u273 \u7883 a ch\u7881  c\u7917 a h\'e0ng s\u7869  \u273 \u432 \u7907 c b\u7893  sung.</p>\
+      </div>\
+\
+      <div>\
+        <p><strong>Li\'ean h\uc0\u7879 </strong></p>\
+        <div class="footer-links">\
+          <!-- Thay URL b\'ean d\uc0\u432 \u7899 i b\u7857 ng link Zalo ch\'ednh th\u7913 c c\u7911 a c\u7917 a h\'e0ng -->\
+          <a href="https://zalo.me/" target="_blank" rel="noopener noreferrer">Zalo (c\uc0\u7847 n c\u7845 u h\'ecnh)</a>\
+          <a href="#products">S\uc0\u7843 n ph\u7849 m</a>\
+          <a href="#home">V\uc0\u7873  \u273 \u7847 u trang \u8593 </a>\
+        </div>\
+      </div>\
+    </div>\
+  </footer>\
+\
+  <!-- C\uc0\u7847 n thay b\u7857 ng li\'ean k\u7871 t Zalo ch\'ednh th\u7913 c c\u7911 a c\u7917 a h\'e0ng tr\u432 \u7899 c khi \u273 \u432 a website l\'ean m\u7841 ng -->\
+  <a class="zalo-float" href="https://zalo.me/" target="_blank" rel="noopener noreferrer">\
+    Chat Zalo\
+  </a>\
+\
+  <script>\
+    // D\uc0\u7918  LI\u7878 U MINH H\u7884 A: h\'e3y thay b\u7857 ng t\'ean, \u7843 nh v\'e0 gi\'e1 b\'e1n th\u7853 t tr\u432 \u7899 c khi c\'f4ng khai.\
+    const products = [\
+      \{ name: "Hoa h\uc0\u7891 ng pastel", price: 450000, tag: "Y\'eau th\'edch", photo: "photo-1494972308805-463bc619d34e" \},\
+      \{ name: "Hoa h\uc0\u7891 ng \u273 \u7887 ", price: 650000, tag: "B\'e1n ch\u7841 y", photo: "photo-1518895949257-7621c3c786d7" \},\
+      \{ name: "Hoa h\uc0\u432 \u7899 ng d\u432 \u417 ng", price: 520000, tag: "", photo: "photo-1470252649378-9c29740c9fa8" \},\
+      \{ name: "Hoa lily tr\uc0\u7855 ng", price: 580000, tag: "", photo: "photo-1525310072745-f49212b5ac6d" \},\
+      \{ name: "Hoa tulip", price: 620000, tag: "M\uc0\u7899 i", photo: "photo-1520763185298-1b434c919102" \},\
+      \{ name: "Hoa c\uc0\u7849 m t\'fa c\u7847 u", price: 550000, tag: "", photo: "photo-1490750967868-88aa4486c946" \},\
+      \{ name: "Hoa baby", price: 390000, tag: "", photo: "photo-1526045478516-99145907023c" \},\
+      \{ name: "B\'f3 hoa pastel ph\uc0\u7889 i m\'e0u", price: 750000, tag: "N\u7893 i b\u7853 t", photo: "photo-1523438885200-e635ba2c371e" \},\
+      \{ name: "Gi\uc0\u7887  hoa sinh nh\u7853 t", price: 850000, tag: "", photo: "photo-1508610048659-a06b669e3321" \},\
+      \{ name: "B\'f3 hoa h\uc0\u7891 ng kem", price: 690000, tag: "", photo: "photo-1525310072745-f49212b5ac6d" \},\
+      \{ name: "Hoa \uc0\u273 \u7891 ng ti\u7873 n", price: 420000, tag: "", photo: "photo-1494972308805-463bc619d34e" \},\
+      \{ name: "Hoa c\'fac tana", price: 380000, tag: "", photo: "photo-1490750967868-88aa4486c946" \},\
+      \{ name: "H\uc0\u7897 p hoa cao c\u7845 p", price: 990000, tag: "Cao c\u7845 p", photo: "photo-1526045478516-99145907023c" \},\
+      \{ name: "B\'f3 hoa c\uc0\u432 \u7899 i", price: 1200000, tag: "", photo: "photo-1518895949257-7621c3c786d7" \},\
+      \{ name: "Hoa lan", price: 780000, tag: "", photo: "photo-1520763185298-1b434c919102" \},\
+      \{ name: "Hoa c\uc0\u7849 m ch\u432 \u7899 ng", price: 450000, tag: "", photo: "photo-1508610048659-a06b669e3321" \},\
+      \{ name: "Hoa h\uc0\u7891 ng v\'e0ng", price: 560000, tag: "", photo: "photo-1470252649378-9c29740c9fa8" \},\
+      \{ name: "B\'f3 hoa ch\'fac m\uc0\u7915 ng", price: 890000, tag: "", photo: "photo-1523438885200-e635ba2c371e" \},\
+      \{ name: "B\'f3 hoa c\uc0\u7843 m \u417 n", price: 490000, tag: "", photo: "photo-1490750967868-88aa4486c946" \},\
+      \{ name: "B\'f3 hoa t\'ecnh y\'eau", price: 790000, tag: "\uc0\u272 \u7863 c bi\u7879 t", photo: "photo-1518895949257-7621c3c786d7" \}\
+    ];\
+\
+    let cartCount = 0;\
+    const grid = document.getElementById("productGrid");\
+\
+    function formatPrice(price) \{\
+      return new Intl.NumberFormat("vi-VN").format(price) + "\uc0\u273 ";\
+    \}\
+\
+    products.forEach((product, index) => \{\
+      const card = document.createElement("article");\
+      card.className = "product-card";\
+\
+      const imageUrl =\
+        "https://images.unsplash.com/" + product.photo +\
+        "?auto=format&fit=crop&w=650&q=80";\
+\
+      card.innerHTML = `\
+        <div class="product-image-wrap">\
+          <img\
+            class="product-image"\
+            src="$\{imageUrl\}"\
+            alt="$\{product.name\}"\
+            loading="lazy"\
+          >\
+          $\{product.tag ? `<span class="product-tag">$\{product.tag\}</span>` : ""\}\
+        </div>\
+        <h3 class="product-name">$\{product.name\}</h3>\
+        <p class="product-price">$\{formatPrice(product.price)\}</p>\
+        <div class="product-actions">\
+          <button class="add-button" type="button" data-index="$\{index\}">\
+            + Th\'eam v\'e0o gi\uc0\u7887 \
+          </button>\
+        </div>\
+      `;\
+\
+      grid.appendChild(card);\
+    \});\
+\
+    grid.addEventListener("click", function(event) \{\
+      const button = event.target.closest(".add-button");\
+      if (!button) return;\
+\
+      cartCount += 1;\
+      document.getElementById("cartCount").textContent = cartCount;\
+      alert("\uc0\u272 \'e3 th\'eam s\u7843 n ph\u7849 m v\'e0o gi\u7887  m\u7851 u. Ch\u7913 c n\u259 ng \u273 \u7863 t h\'e0ng th\u7853 t c\u7847 n \u273 \u432 \u7907 c ph\'e1t tri\u7875 n ti\u7871 p.");\
+    \});\
+\
+    document.getElementById("cartButton").addEventListener("click", function() \{\
+      alert("\uc0\u272 \'e2y l\'e0 gi\u7887  h\'e0ng giao di\u7879 n m\u7851 u. Ch\u7913 c n\u259 ng xem gi\u7887  v\'e0 \u273 \u7863 t h\'e0ng th\u7853 t ch\u432 a \u273 \u432 \u7907 c t\'edch h\u7907 p.");\
+    \});\
+  </script>\
+</body>\
+</html>\
+}

@@ -1,0 +1,331 @@
+
+ANZU BLOSSOM
+DESIGN SPECIFICATION
+Version: 1.0
+Language: Vietnamese
+Status: Approved visual direction
+
+==================================================
+1. PROJECT OVERVIEW
+==================================================
+
+Brand name: Anzu Blossom
+Business: Fresh flower shop
+Website type: Online flower store
+Target devices: Desktop, tablet, mobile
+Primary goal: Display flower photography and prices clearly, encourage customers to contact and order flowers.
+
+The design direction has been approved. Developers and AI coding assistants must preserve the visual identity unless the owner explicitly requests changes.
+
+Design keywords:
+- Premium botanical boutique
+- Elegant and natural
+- Bright, minimal, welcoming
+- Refined typography
+- Large flower photography
+- Clear product prices
+- Easy mobile shopping
+- Lightweight and responsive
+
+Avoid:
+- Bright pink or purple as dominant colors
+- Overly decorative layouts
+- Excessive animations
+- Crowded product cards
+- Small or low-contrast prices
+- Unnecessary popups
+- Horizontal scrolling on mobile
+
+==================================================
+2. COLOR SYSTEM
+==================================================
+
+Primary background / Ivory:
+#F5F6ED
+
+Light Sage:
+#DCE3D3
+
+Primary Text:
+#394333
+
+Primary Accent / Buttons:
+#68765D
+
+Borders and Dividers:
+#D9DECF
+
+White:
+#FFFFFF
+
+Usage:
+- Use Ivory for the main page background.
+- Use Light Sage for the hero and selected content sections.
+- Use Primary Text for headings and body text.
+- Use Primary Accent for primary buttons, prices, and selected highlights.
+- Use Borders and Dividers for subtle separators.
+- Maintain sufficient text contrast.
+
+Do not change the established color palette without explicit approval.
+
+==================================================
+3. TYPOGRAPHY
+==================================================
+
+Display font:
+Playfair Display
+
+Use for:
+- Brand wordmark
+- Hero heading
+- Major section headings
+- Editorial/story headings
+
+Body font:
+Be Vietnam Pro
+
+Use for:
+- Navigation
+- Product names
+- Prices
+- Buttons
+- Paragraphs
+- Forms
+- Administrative interface
+
+Font loading:
+Google Fonts may be used where available.
+Provide sensible fallback fonts if the external font service is unavailable.
+
+Typography direction:
+- Elegant display headings
+- Clean, readable Vietnamese body text
+- Clear distinction between heading, product name and price
+- Avoid excessive font weights and decorative styles
+
+==================================================
+4. DESKTOP LAYOUT
+==================================================
+
+A. Announcement bar
+- Small horizontal bar at the top.
+- Dark green background.
+- White text.
+- Can display a short brand message.
+
+B. Header
+- Anzu Blossom wordmark.
+- Navigation links.
+- Product browsing entry.
+- Cart indicator.
+- Clean horizontal arrangement.
+- Subtle bottom border.
+
+C. Hero section
+- Two-column layout.
+- Left: eyebrow text, headline, supporting copy, call-to-action.
+- Right: large flower photograph.
+- Light Sage background.
+- Generous whitespace.
+- Elegant Playfair Display headline.
+
+Suggested Vietnamese copy:
+
+Heading:
+"Gửi hoa, trao yêu thương."
+
+Supporting text:
+"Những thiết kế hoa tươi tinh tế dành cho sinh nhật, ngày kỷ niệm và những khoảnh khắc bạn muốn lưu giữ thật lâu."
+
+Primary CTA:
+"Khám phá bộ sưu tập"
+
+D. Featured products
+Section title:
+"Hoa được yêu thích"
+
+Supporting text:
+"Chọn một bó hoa thay lời muốn nói."
+
+Display:
+- 20 products.
+- 5 columns x 4 rows on standard desktop screens.
+- Consistent image ratios.
+- Large, high-quality product images.
+- Product name below image.
+- Price clearly visible.
+- Optional product tag.
+- Optional add-to-cart button.
+
+E. Brand story
+- Light Sage background.
+- Editorial heading.
+- Short brand introduction.
+- Supporting flower photograph.
+- Optional CTA leading to products.
+
+F. Footer
+- Brand name.
+- Short brand description.
+- Contact information.
+- Zalo link.
+- Useful navigation links.
+
+G. Floating Zalo contact
+- Fixed near the lower-right corner.
+- Must not obscure important content or product controls.
+- Must link to the shop's real Zalo account once provided.
+
+==================================================
+5. PRODUCT CARD SPECIFICATION
+==================================================
+
+Each product card should support:
+- Product image
+- Product name
+- Price
+- Optional promotional tag
+- Optional stock status
+- Optional add-to-cart button
+
+Image:
+- Consistent aspect ratio, approximately 4:5.
+- Use object-fit: cover.
+- Avoid stretching or distorting images.
+- Use optimized images for performance.
+
+Product name:
+- Readable on mobile.
+- Ideally limited to a few lines.
+- Consistent spacing.
+
+Price:
+- Prominent.
+- Bold enough to scan quickly.
+- Use Vietnamese currency formatting, for example: 450.000đ.
+- Do not use illustrative prices as real store prices.
+
+Tags:
+- Small, subtle, neutral styling.
+- Examples: "Yêu thích", "Mới", "Bán chạy".
+- Only show tags when appropriate.
+
+==================================================
+6. RESPONSIVE DESIGN
+==================================================
+
+Desktop:
+- Product grid: 5 columns.
+- Hero: two columns.
+- Header: horizontal navigation.
+- Comfortable whitespace.
+
+Tablet:
+- Product grid: approximately 3 columns.
+- Adjust hero image and typography.
+- Prevent cramped navigation.
+
+Mobile:
+- Product grid: 2 columns.
+- Hero: stacked layout.
+- Header: compact, with navigation adapted to screen width.
+- Product images remain large enough to identify the flowers.
+- Product names and prices remain readable.
+- Buttons are easy to tap.
+- Floating Zalo button remains accessible.
+- No horizontal page overflow.
+- No clipped text or buttons.
+
+Test at widths around:
+- 360px
+- 390px
+- 430px
+- 768px
+- 1024px
+- 1440px
+
+Responsive behavior must be implemented with CSS, not merely by shrinking a desktop screenshot.
+
+==================================================
+7. IMAGE DIRECTION
+==================================================
+
+Use attractive, high-quality flower photography.
+
+Preferred visual characteristics:
+- Natural light
+- Realistic flower colors
+- Clean composition
+- Elegant wrapping
+- Soft botanical atmosphere
+- Consistent visual quality
+
+The images in prototypes are illustrative.
+They are not necessarily actual inventory photographs.
+
+Before publishing:
+- Replace sample images with approved product photos.
+- Ensure each photo corresponds to the correct product.
+- Optimize image size.
+- Use descriptive alt text.
+
+==================================================
+8. INTERACTION AND VISUAL STATES
+==================================================
+
+Buttons:
+- Clear hover and focus states.
+- Consistent shape and padding.
+- Primary buttons use #68765D.
+
+Links:
+- Visible focus indicators.
+- No misleading destinations.
+
+Product cards:
+- Subtle hover behavior on desktop.
+- Do not rely on hover for essential mobile functions.
+
+Cart:
+- Show cart item count.
+- Clearly communicate when a product is added.
+- Do not claim a real order was placed when only a visual prototype exists.
+
+Zalo:
+- Use the official shop contact URL supplied by the owner.
+- Do not invent a phone number or account.
+
+==================================================
+9. ACCESSIBILITY AND QUALITY
+==================================================
+
+- Use semantic HTML.
+- Use meaningful image alt text.
+- Ensure keyboard navigation works.
+- Use visible focus styles.
+- Maintain readable contrast.
+- Use buttons for actions and links for navigation.
+- Avoid layout shifts where practical.
+- Lazy-load below-the-fold images.
+- Keep the page lightweight.
+
+==================================================
+10. DESIGN ACCEPTANCE CHECKLIST
+==================================================
+
+[ ] Correct Ivory and Sage palette.
+[ ] Playfair Display for display headings.
+[ ] Be Vietnam Pro for body text.
+[ ] Desktop layout displays 5 product columns.
+[ ] Mobile layout displays 2 product columns.
+[ ] Featured section contains 20 sample products.
+[ ] Images maintain consistent proportions.
+[ ] Product prices are easy to read.
+[ ] Hero section follows the approved layout.
+[ ] Zalo contact is visible.
+[ ] No horizontal scrolling on mobile.
+[ ] No clipped navigation or product information.
+[ ] Sample data is clearly identified.
+[ ] No false claim that checkout or payment is operational.
+
+END OF DESIGN SPECIFICATION

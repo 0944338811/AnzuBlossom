@@ -1,0 +1,521 @@
+
+ANZU BLOSSOM
+PRODUCT REQUIREMENTS DOCUMENT (PRD)
+Version: 1.0
+Language: Vietnamese
+Status: Initial implementation specification
+
+==================================================
+1. PROJECT SUMMARY
+==================================================
+
+Project:
+Anzu Blossom online flower store.
+
+Business:
+Selling fresh flowers and flower arrangements.
+
+Primary objective:
+Create a lightweight, attractive, mobile-friendly website where customers can browse flower photos, see prices, select products and contact the shop or submit an order.
+
+Business owner:
+A non-technical user who needs to manage products without editing source code.
+
+Main priorities:
+1. Visual quality.
+2. Clear product images and prices.
+3. Excellent mobile experience.
+4. Easy product management.
+5. Simple customer ordering.
+6. Reliable contact through Zalo.
+7. Reasonable development and operating costs.
+
+==================================================
+2. TARGET USERS
+==================================================
+
+Customer:
+- Wants to see flower arrangements quickly.
+- Wants to know the price before contacting the shop.
+- May browse primarily on a mobile phone.
+- Wants a simple way to ask questions or order.
+- Does not want a complicated registration process unless necessary.
+
+Store owner:
+- Needs to add and edit products.
+- Needs to update prices and photos.
+- Needs to manage stock status.
+- Needs to receive and process orders.
+- Needs straightforward instructions in Vietnamese.
+- Should not need to write code for routine store management.
+
+==================================================
+3. PLATFORM AND TECHNICAL DIRECTION
+==================================================
+
+Preferred initial solution:
+WordPress + WooCommerce.
+
+A suitable existing theme, including Florial, may be considered if it can support the approved design without excessive customization.
+
+Reasons:
+- Products can be managed through an administrative interface.
+- Product prices and photos can be updated without editing code.
+- Shopping cart and checkout functionality are available through WooCommerce.
+- The website can be expanded later.
+
+Alternative:
+A custom HTML/CSS/JavaScript prototype may be used for the first visual stage.
+
+Important distinction:
+A static HTML prototype is not a complete e-commerce system.
+Real orders, inventory, administration and payment require suitable implementation and testing.
+
+Before changing the recommended platform, explain:
+- Why the alternative is better.
+- Expected setup and recurring costs.
+- How products will be managed.
+- How orders will be received.
+- What the owner will need to maintain.
+
+==================================================
+4. WEBSITE STRUCTURE
+==================================================
+
+Required pages or page areas:
+
+1. Home page
+2. Product listing / flower catalog
+3. Product detail page
+4. Shopping cart
+5. Checkout / order submission
+6. Contact information
+7. About the shop
+8. Privacy and applicable policy pages
+9. Administrative area
+
+Optional future features:
+- Product search.
+- Product categories.
+- Promotional campaigns.
+- Customer reviews.
+- Delivery information page.
+- Blog or flower care advice.
+
+Build the essential shopping flow first.
+Do not overcomplicate the initial release.
+
+==================================================
+5. HOME PAGE REQUIREMENTS
+==================================================
+
+5.1 Header
+- Brand wordmark.
+- Navigation.
+- Product browsing.
+- Cart indicator.
+- Responsive mobile behavior.
+
+5.2 Hero
+- Approved Light Sage background.
+- Large headline.
+- Short supporting text.
+- Flower photograph.
+- CTA to browse flowers.
+
+5.3 Featured products
+- 20 products in the initial sample layout.
+- 5 columns on desktop.
+- Approximately 3 columns on tablet.
+- 2 columns on mobile.
+- Product image, name and price.
+- Optional product label.
+- Link to product detail.
+- Add-to-cart action when supported.
+
+5.4 Brand story
+- Brief introduction.
+- Supporting photograph.
+- CTA to browse products.
+
+5.5 Contact and footer
+- Shop contact details.
+- Zalo contact link.
+- Useful navigation.
+- Business information supplied by the owner.
+
+==================================================
+6. PRODUCT MANAGEMENT
+==================================================
+
+Every product should support the following fields:
+
+Required:
+- Product ID.
+- Product name.
+- Price.
+- Main image.
+- Published/draft status.
+
+Recommended:
+- Product description.
+- Additional images.
+- Category.
+- Stock status.
+- SKU.
+- Sale price, if applicable.
+- Featured product flag.
+- Creation/update date.
+
+Store owner must be able to:
+- Add a product.
+- Edit product information.
+- Change the price.
+- Replace images.
+- Publish or unpublish a product.
+- Mark a product in stock or out of stock.
+- Organize products into categories.
+
+The store should support more than 100 products without requiring a redesign.
+
+Do not hardcode the product catalog into HTML as the final product-management solution.
+
+==================================================
+7. SAMPLE PRODUCT DATA
+==================================================
+
+Use the following 20 sample products for the initial design:
+
+1. Hoa hồng pastel
+2. Hoa hồng đỏ
+3. Hoa hướng dương
+4. Hoa lily trắng
+5. Hoa tulip
+6. Hoa cẩm tú cầu
+7. Hoa baby
+8. Bó hoa pastel phối màu
+9. Giỏ hoa sinh nhật
+10. Bó hoa hồng kem
+11. Hoa đồng tiền
+12. Hoa cúc tana
+13. Hộp hoa cao cấp
+14. Bó hoa cưới
+15. Hoa lan
+16. Hoa cẩm chướng
+17. Hoa hồng vàng
+18. Bó hoa chúc mừng
+19. Bó hoa cảm ơn
+20. Bó hoa tình yêu
+
+IMPORTANT:
+These are sample names, not confirmed inventory.
+
+All sample prices must be labeled as illustrative until the owner provides actual prices.
+
+Do not invent actual shop inventory, discounts, delivery charges or availability.
+
+==================================================
+8. SHOPPING CART
+==================================================
+
+Required behavior:
+- Add a product to the cart.
+- Show the cart item count.
+- Show selected products and prices.
+- Allow quantity changes.
+- Allow removing an item.
+- Calculate the subtotal correctly.
+- Show any delivery charge separately if configured.
+- Show the final total before the customer confirms the order.
+
+The cart must use real application state and persist appropriately for the chosen platform.
+
+Do not use JavaScript alert boxes as the final cart experience.
+
+==================================================
+9. ORDER SUBMISSION
+==================================================
+
+The ordering flow should be simple, especially on mobile.
+
+Suggested customer fields:
+- Customer name.
+- Phone number.
+- Delivery address, if delivery is requested.
+- Requested delivery date/time, if supported.
+- Message or card note, if applicable.
+- Order notes.
+
+Before submission:
+- Display the selected products.
+- Display quantities and prices.
+- Display the total.
+- Explain any applicable delivery charge.
+- Let the customer review the information.
+
+After submission:
+- Show a clear success or error message.
+- Record the order through the chosen backend/platform.
+- Provide an order reference where supported.
+- Make the order available to the store owner.
+
+Do not claim an order has been submitted unless the system has actually recorded it.
+
+Payment:
+Payment integration is not required for the first visual prototype.
+Before adding online payment, explain available providers, costs, requirements and setup steps.
+
+==================================================
+10. ZALO CONTACT
+==================================================
+
+Provide a prominent Zalo contact option.
+
+Requirements:
+- Link to the official shop Zalo account.
+- Make it accessible on mobile and desktop.
+- Avoid covering important content.
+- Use the same contact destination in the footer and floating contact button where appropriate.
+
+The owner must supply the actual Zalo account or official link.
+
+Until then:
+- Mark the link as needing configuration.
+- Do not invent a phone number.
+- Do not claim that customer messaging has been tested.
+
+Zalo chat is a contact channel.
+It does not automatically mean an order is recorded by the website.
+
+==================================================
+11. ADMINISTRATION
+==================================================
+
+The owner needs a protected administrative interface to manage:
+
+Products:
+- Names.
+- Photos.
+- Prices.
+- Descriptions.
+- Categories.
+- Stock status.
+- Publication status.
+
+Orders:
+- New orders.
+- Customer details.
+- Order items.
+- Totals.
+- Order status.
+- Notes.
+
+Recommended order statuses:
+- New.
+- Confirmed.
+- Preparing.
+- Out for delivery.
+- Completed.
+- Cancelled.
+
+Permissions:
+- Use secure authentication.
+- Do not expose the administrative interface to unauthenticated users.
+- Follow the security model of the selected platform.
+- Limit unnecessary administrator accounts.
+
+If using WooCommerce, prefer its built-in product and order management where practical.
+
+==================================================
+12. RESPONSIVE REQUIREMENTS
+==================================================
+
+Desktop:
+- Five product columns on the main product section.
+- Two-column hero layout.
+- Clear navigation.
+
+Tablet:
+- Approximately three product columns.
+- Adjusted spacing and navigation.
+
+Mobile:
+- Two product columns.
+- Stacked hero layout.
+- Large enough touch targets.
+- Readable prices.
+- No horizontal overflow.
+- No clipped product names.
+- Accessible Zalo contact.
+- Simple cart and checkout.
+
+Test at widths around:
+360px, 390px, 430px, 768px, 1024px and 1440px.
+
+==================================================
+13. PERFORMANCE AND SECURITY
+==================================================
+
+Performance:
+- Optimize and compress images.
+- Use appropriate responsive image sizes.
+- Lazy-load images where suitable.
+- Avoid unnecessary JavaScript.
+- Avoid installing unnecessary plugins.
+- Keep page structure simple.
+
+Security:
+- Use HTTPS in production.
+- Keep WordPress, themes and plugins updated.
+- Use strong administrative credentials.
+- Back up the site and database.
+- Avoid exposing customer information.
+- Collect only necessary customer data.
+- Provide appropriate privacy information.
+- Use reputable plugins and services.
+
+==================================================
+14. ANALYTICS AND SEO
+==================================================
+
+Initial SEO requirements:
+- Unique page titles.
+- Useful meta descriptions.
+- Descriptive product names.
+- Descriptive image alt text.
+- Clean URLs where supported.
+- Logical heading hierarchy.
+- Product pages accessible to search engines where appropriate.
+
+Analytics:
+Optional in the first release.
+Explain privacy implications and setup requirements before adding tracking.
+
+==================================================
+15. DEVELOPMENT PHASES
+==================================================
+
+PHASE 1: VISUAL PROTOTYPE
+
+- Build the approved home page.
+- Use the approved color palette and fonts.
+- Implement responsive desktop and mobile layouts.
+- Display 20 sample products.
+- Use clearly identified sample prices.
+- Verify that images and layout load correctly.
+- Do not claim real cart, order, payment or Zalo integration.
+
+Deliverables:
+- Complete source files.
+- Preview instructions.
+- Responsive test results.
+
+PHASE 2: STORE FOUNDATION
+
+- Set up the chosen platform.
+- Configure product categories.
+- Configure product details.
+- Create product listing and detail pages.
+- Configure cart and checkout.
+
+Deliverables:
+- Working product catalog.
+- Working cart.
+- Test order flow.
+
+PHASE 3: BUSINESS CONFIGURATION
+
+- Enter actual product information.
+- Replace sample photographs.
+- Enter real prices.
+- Configure Zalo.
+- Add business contact information.
+- Configure delivery and order policies.
+
+Deliverables:
+- Business-ready content.
+- Verified contact destination.
+- Tested ordering workflow.
+
+PHASE 4: LAUNCH PREPARATION
+
+- Test desktop and mobile.
+- Test product and cart behavior.
+- Test order submission.
+- Check links and images.
+- Configure HTTPS and backups.
+- Explain hosting and domain costs.
+- Provide an owner handover guide.
+
+Deliverables:
+- Launch checklist.
+- Backup instructions.
+- Basic maintenance guide.
+- Vietnamese instructions for the owner.
+
+==================================================
+16. ACCEPTANCE CRITERIA
+==================================================
+
+Design:
+[ ] Approved palette and typography are preserved.
+[ ] Desktop product grid has 5 columns.
+[ ] Mobile product grid has 2 columns.
+[ ] Featured section contains 20 products.
+[ ] Prices are clear.
+[ ] Responsive behavior works at target widths.
+
+Catalog:
+[ ] Products can be created and edited through administration.
+[ ] Product images and prices can be changed without editing code.
+[ ] Stock status can be updated.
+[ ] Catalog supports at least 100 products.
+
+Cart and orders:
+[ ] Products can be added to the cart.
+[ ] Quantities can be changed.
+[ ] Products can be removed.
+[ ] Totals are calculated correctly.
+[ ] Order submission is recorded correctly.
+[ ] Error and success states are clear.
+
+Contact:
+[ ] Zalo link uses the owner's official destination.
+[ ] Contact link works on mobile.
+[ ] No placeholder contact details remain in production.
+
+Launch:
+[ ] HTTPS is enabled.
+[ ] Backups are configured.
+[ ] Administrative access is protected.
+[ ] Sample prices and sample products are replaced or explicitly approved.
+[ ] Owner receives Vietnamese operating instructions.
+
+==================================================
+17. INSTRUCTIONS FOR CLAUDE
+==================================================
+
+Read both the Design Specification and this PRD before making changes.
+
+Follow the approved visual direction.
+Do not redesign the site without permission.
+
+Start with Phase 1 unless the owner explicitly requests another phase.
+
+Before implementation:
+1. Summarize the requirements.
+2. Identify missing business information.
+3. Explain the proposed implementation approach.
+4. Identify any costs or external services.
+5. Explain what will and will not work in the first prototype.
+
+During implementation:
+- Use Vietnamese for explanations.
+- Provide complete files, not isolated snippets when a complete file is required.
+- Explain how to run and preview the project.
+- Clearly distinguish sample data from real data.
+- Do not invent credentials, account details or business policies.
+- Do not claim functionality has been tested unless it has been tested.
+- Keep the solution manageable for a non-technical owner.
+
+END OF PRD
